@@ -33,7 +33,7 @@
       />
     </t-space>
     <t-skeleton :loading="!dataList.length" animation="flashed" style="margin-top: 16px">
-      <t-collapse borderless>
+      <t-collapse expand-mutex borderless>
         <t-collapse-panel v-for="i in dataList" :key="i.title" :value="i.title" :header="i.title">
           <t-card
             :title="_.title"
